@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<head>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="controller.js"></script>
+<script>
+    var theContent = $('#content2');
+ 
+$('#save').on('click', function(){
+  var editedContent   = index.html();
+  localStorage.newContent = editedContent;
+});
+
+if(localStorage.getItem('newContent')) {
+  index.html(localStorage.getItem('newContent'));
+}
+</script>
+<title>WEnterprises: Prototype</title>    
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="css/circle.css">
+<style>
+  body{
+    background-color: #C8C8C8;
+  }
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img style="position:absolute; TOP:0px; LEFT:89px; WIDTH:60px; HEIGHT:49.5px" class="img-circle" src="w.jpg"/>
+                <h1  style="position: absolute; top:0px; left:160px;">WEnterprises: Prototype</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><font color="#686868">Hello, 99@test.com</font></li>
+                    <li><a href="##"><font color="#909090">Log Out</font></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+     <img style="position:absolute; TOP:91px; LEFT:200px; WIDTH:200px;" src="Batman.jpg"/>
+<div style="position:absolute; TOP:80px;LEFT:430px; width:770px;height:167px; border:3px solid black;"></div>
+<p class="oneline" style="position:absolute; TOP:100px; LEFT:450px; WIDTH:500px;">Market</p>
+<p class="oneline" style="position:absolute; TOP:130px; LEFT:450px; WIDTH:500px;">Pain</p>
+<p class="oneline" style="position:absolute; TOP:170px; LEFT:450px; WIDTH:500px;">Benefit</p>
+<button onclick="myFunction()" style="position:absolute; TOP:100px; LEFT:1100px; WIDTH:83px;">Edit Market</button>
+
+<p id="demo" style="position:absolute; TOP:100px; LEFT:600px; WIDTH:500px;">Fill in who are your customers?</p>
+
+<script>
+function myFunction() {
+    var person = prompt("Fill in your customers:");
+    if (person != null) {
+        document.getElementById("demo").innerHTML = person;
+    }
+}
+</script>
+
+
+
+<button onclick="myFunction2()" style="position:absolute; TOP:130px; LEFT:1100px; WIDTH:80px;">Edit Pain</button>
+
+<p id="demo1" style="position:absolute; TOP:130px; LEFT:600px; WIDTH:500px;">What is the pain statement that you are trying to solve for them?</p>
+
+<script>
+function myFunction2() {
+    var person2 = prompt("Enter pain statement:");
+    if (person2 != null) {
+        document.getElementById("demo1").innerHTML = person2;
+    }
+}
+</script>
+
+
+
+<button onclick="myFunction3()" style="position:absolute; TOP:170px; LEFT:1100px; WIDTH:80px;">Edit Benefit</button>
+
+<p id="demo2" style="position:absolute; TOP:170px; LEFT:600px; WIDTH:500px;">What is the benefit that will match that pain statement?</p>
+
+<script>
+function myFunction3() {
+    var person3 = prompt("Enter benefit:");
+    if (person3 != null) {
+        document.getElementById("demo2").innerHTML = person3;
+    }
+}
+</script>
+
+<!-- Bottom part now with progress bars-->
+
+
+<div class="c100 p40" style="position:absolute; TOP:340px; LEFT:300px;">
+<span><font color="black">40% Product</font></span>
+<div class="slice">
+<div class="bar"></div>
+<div class="fill"></div>
+</div>
+</div>
+
+<div class="c100 p10" style="position:absolute; TOP:340px; LEFT:500px;">
+<span><font color="black">1 months Runway</font></span>
+<div class="slice">
+<div class="bar"></div>
+<div class="fill"></div>
+</div>
+</div>
+
+<div class="c100 p31" style="position:absolute; TOP:340px; LEFT:700px;">
+<span><font color="black">31% conversion</font></span>
+<div class="slice">
+<div class="bar"></div>
+<div class="fill"></div>
+</div>
+</div>
+
+<div class="c100 p100" style="position:absolute; TOP:340px; LEFT:900px;">
+<span><font color="black">100% engagement</font></span>
+<div class="slice">
+<div class="bar"></div>
+<div class="fill"></div>
+</div>
+</div>
+
+
+<style> 
+.beige{
+
+    background-color: beige;
+}
+.placement{
+  padding-left: 18px;
+}
+</style>
+<div class="beige" style="position:absolute; TOP:500px;LEFT:50px; width:1263px;height:53px; border:0.1px solid beige;"><br><font class="placement" face="verdana" color="#8B4513" size="2">Small conversion? </font><font color="#8B4513">Learn what you can do to </font><a href="###"><font color="8B4513" face='Impact'>rise your conversion.</font></div>
+
+<style> 
+.lightpink{
+
+    background-color: lightpink;
+  }
+.placement{
+  padding-left: 18px;
+}  
+</style>
+
+<div class="lightpink" style="position:absolute; TOP:567px;LEFT:50px; width:1263px;height:55px; border:0.1px solid lightpink;"><br><font class="placement" face="verdana" color="#8B4513" size="2">Low product score? </font><a href="####"><font face="Impact" color="#8B4513">Try this</font></a><font color="#8B4513"> to get more...</font></div>
+
+
+<div style="position:absolute;TOP:260px; LEFT: 470px; WIDTH:600px; HEIGHT: 100px;">
+  <p><font size="5" face="verdana">How is </font><font face="Impact" size="5">WEnterprises___</font><font size="5" face="verdana">   doing today? </font><font face="verdana" color="gray" size="3.5">Check dashboard</font></p>
+</div>
+
+
+<p>
+<a href="edit-index.html" target="_blank"><img style="position:absolute; TOP:265px; LEFT:695px; WIDTH:40px;" src="edit.jpg"/></a>
+</p>
+
+
+
+
+
+</body>
+</html>
